@@ -17,16 +17,6 @@ const Dashboard = () => {
     },
   ]);
 
-  const renderResources = () => {
-    return data.map((item) => (
-      <div className="resource" key={item.title}>
-        <h2>{item.title}</h2>
-        <a href={item.link}>{item.link}</a>
-        <p>{item.description}</p>
-      </div>
-    ));
-  };
-
   const handleAddItem = () => {
     const newItem = {
       title: "New Item",
